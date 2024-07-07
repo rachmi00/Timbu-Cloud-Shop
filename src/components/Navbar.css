@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "inter";
+}
+header{
+ height: 80px;
+ padding: 10px 100px 10px 100px;
+}
+h2{
+    font-family: 'Oswald';
+    color: #077929;
+}
+nav{
+    display: flex;
+    align-items: center;
+ 
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 12px;
+   margin-right: 1px;
+}
+nav ul li input{
+    border-radius: 4px;
+    border: 1px solid #000;
+      padding: 10px;
+     padding-right: 120px;
+    width: 340px;
+}
+
+.input-wrapper{
+    position: relative;
+    display: inline-block;
+}
+.input-wrapper img{
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 24px;
+    width: 24px;
+}
+.flex img{
+  width: 18px;
+  height: 13.5px;
+}
+.cart{
+    background-color: #077929;
+    color: #fff;
+    padding: 12px 14px;
+    border-radius: 4px;
+}
