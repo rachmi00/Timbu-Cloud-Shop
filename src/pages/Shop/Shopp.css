@@ -206,12 +206,15 @@ font-family: 'Inter';
         width: 411px;
         padding: 8px 12px ;
         border-radius: 4px;
+        margin-top: 15px;
         
 }
 .s2{
     height: 48px;
     border-radius: 4px;
     padding: 8px 12px 8px 12px;
+    text-align: center;
+    margin-top: 15px;
     font-weight: 800;
     border-radius: 4px;
     width: 411px;
@@ -228,17 +231,16 @@ font-family: 'Inter';
 }
 .filter{
     border: 2px solid #077929;
-    padding: 12px 16px;
+    padding: 8px 16px;
     gap: 8px;
    border-radius: 4px;
-   
    height: 40px;
    margin-right: 10px;
 }
 .filtered{
   background-color: #C6F6D5;
   margin-right: 10px;
-    padding: 12px 16px;
+    padding: 8px 16px;
     gap: 8px;
    border-radius: 4px;
   
@@ -246,8 +248,14 @@ font-family: 'Inter';
 }
 .interest-list{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+h5{
+    text-align: start;
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 

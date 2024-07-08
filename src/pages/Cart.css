@@ -14,7 +14,7 @@ body{
     display: flex;
     justify-content: start;
     height: 190px;
-    width: 630px;
+    width: 600px;
     border-radius: 4px;
     gap: 24px;
     margin-bottom: 10px;
@@ -32,7 +32,7 @@ body{
     width: 100%;
     padding: 24px 205px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .items{
     width: 630px;
@@ -42,14 +42,33 @@ body{
     display: flex;
     justify-content: space-between;
     height: 46px;
-    width: 416px;
+    width: 420px;
 }
 .summary{
     width: 335px;
-    height: 449px;
-   
+   margin-left: 30px;
     border: 1px solid #0000;
     border-radius: 4px;
     padding: 24px;
     gap: 24px;
+    border: 1px solid;
+    height: 449px;
+}
+.summary p{
+    text-align: start;
+    font-weight: 700;
+
+}
+.width{
+    width: 300px;
+}
+.trash img{
+    margin-top: 70px;
+    width: 24px;
+    height: 24px;
+}
+.order-border{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
 }

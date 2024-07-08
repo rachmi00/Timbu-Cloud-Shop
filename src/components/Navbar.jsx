@@ -5,7 +5,7 @@ import user from "../assets/Vector.svg"
 import content from "../assets/Cart Content Indicator.svg"
 import cart from "../assets/Cart vector.svg"
 import "./Navbar.css"
-import { NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
   return (
@@ -18,11 +18,11 @@ const Navbar = () => {
             <input type="text" placeholder='search for anything' />
             <img src={search} alt="" />
           </li>
-          <li>Track Order</li>
-          <li>help</li>
-          <li className='user'><span><img src={user} alt="" /></span>  Account</li>
+        <Link to='/'> <li className='text-black fw-medium'>Home</li></Link>
+          <li className='text-muteds'>help</li>
+          <li className='user text-muted'><span><img src={user} alt="" /></span>  Account</li>
 
-          <NavLink to="/cart"> <li className='cart' ><span><img src={cart} alt="" /></span> Cart <span><img src={content} alt="" /></span></li></NavLink>
+          <Link to="/cart"> <li className='cart' ><span><img src={cart} alt="" /></span> Cart <span><img src={content} alt="" /></span></li></Link>
         </ul>
       </nav>
     </header>

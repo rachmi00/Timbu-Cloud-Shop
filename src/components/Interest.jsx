@@ -4,6 +4,7 @@ import '.././pages/Shop/Shopp.css'
 import Product from '../pages/Shop/Product';
 import  heart from "../assets/Heart.png"
 import cart from '../assets/ShoppingCart.png'
+import { NavLink } from 'react-router-dom';
 
 const Interest = () => {
 
@@ -11,14 +12,16 @@ const Interest = () => {
   return (
       
     <div className='product'>
+         <h5 >You Might Also like</h5>
          <div className='interest-list'>
+           
             {interestProducts.map(product=>(
                 <div key={product.id}>
                        <div className="product-contain">
                 <img src={product.productImage} alt="product image" />
                 <div className='buttons'>
                     <button className='cart-button '><img src={heart} alt="like" className='cart-image' /></button>
-                    <button className='heart-button' onClick={()=>addToCart(id)}><img src={cart} alt="Shopping Cart" className='cart-image' /></button>
+                   <NavLink to='/cart'><button className='heart-button' onClick={()=>addToCart(id)}><img src={cart} alt="Shopping Cart" className='cart-image' /></button></NavLink>
                   
                 </div>
             </div>

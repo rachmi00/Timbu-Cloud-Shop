@@ -7,10 +7,12 @@ body{
     font-family: "inter";
 }
 header{
+    margin-top: 0;
  height: 80px;
- padding: 10px 100px 10px 100px;
+ padding: 5px 100px;
+ margin-bottom: 20px
 }
-h2{
+.navbar h2{
     font-family: 'Oswald';
     color: #077929;
 }
@@ -54,6 +56,6 @@ nav ul li input{
 .cart{
     background-color: #077929;
     color: #fff;
-    padding: 12px 14px;
+    padding: 10px 14px;
     border-radius: 4px;
 }

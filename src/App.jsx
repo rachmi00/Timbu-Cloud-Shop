@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Shop from './pages/Shop/Shop'
 import ShopContextProvider from './context/shop-context'
+import Checkout from './pages/Checkout'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Shop />}></Route>
             <Route path='/cart' element={<Cart />}></Route>
+            <Route path='/checkout' element={<Checkout/>}></Route>
           </Routes>
           <Footer />
         </Router>
