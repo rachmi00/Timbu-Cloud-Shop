@@ -1,8 +1,7 @@
 import React from 'react'
-import pic1 from "../assets/sach.png"
-import pic2 from "../assets/torso pic.png"
-import pic3 from "../assets/Neck pic.png"
-import pic4 from "../assets/mobile image.png"
+import pic1 from "../assets/hero_desktop.png"
+
+import pic4 from "../assets/hero_mobile.png"
 import {useNavigate} from 'react-router-dom'
 
 const Landing = () => {
@@ -15,8 +14,6 @@ const Landing = () => {
     <div className='hero-image-container'>
       
       <div className="hero1 desktop-image"><img src={pic1} alt="sach pic" className='pic1'/></div>
-      <div className="hero2 desktop-image">    <img src={pic2} alt="torso pic" className='pic2'/></div>
-      <div className="hero3 desktop-image"> <img src={pic3} alt=" neck pic" className='pic3'/></div>
 
      <div className='mobile-image'><img src={pic4} alt="" /></div>
     </div>
