@@ -16,12 +16,12 @@ const Product = (props) => {
                 <img src={productImage} alt="product image" />
                 <div className='buttons'>
                     <button className='cart-button '><img src={heart} alt="like" className='cart-image' /></button>
-                 <NavLink to='/cart'> <button className='heart-button' onClick={()=>addToCart(id)}><img src={cart} alt="Shopping Cart" className='cart-image' /></button></NavLink>
+                  <button className='heart-button' onClick={()=>addToCart(id)}><img src={cart} alt="Shopping Cart" className='cart-image' /><span>nnj</span></button>
                   
                 </div>
             </div>
             <div className='price-container'>
-                <p className='price'>${price}</p>
+                <p className='price'>₦{price}</p>
                 <p className='p-flex'>  <span>4.5</span> <span><img src={star} alt="" className='star' /></span></p>
             </div>
             <div className='product-info'>

@@ -36,6 +36,9 @@ nav ul li input{
      padding-right: 120px;
     width: 340px;
 }
+.no-underline{
+    text-decoration: none;
+}
 
 .input-wrapper{
     position: relative;
