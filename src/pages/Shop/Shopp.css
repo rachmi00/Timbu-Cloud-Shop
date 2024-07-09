@@ -1,3 +1,18 @@
+@font-face{
+    font-family: "Rockwell Condensed";
+    src: url("d007e5e80d2a1e560bcd791f56860028.eot");
+    src: url("d007e5e80d2a1e560bcd791f56860028.eot?#iefix")format("embedded-opentype"),
+        url("d007e5e80d2a1e560bcd791f56860028.woff")format("woff"),
+        url("d007e5e80d2a1e560bcd791f56860028.woff2")format("woff2"),
+        url("d007e5e80d2a1e560bcd791f56860028.ttf")format("truetype"),
+        url("d007e5e80d2a1e560bcd791f56860028.svg#Rockwell Condensed")format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+
+
+
 *{
     box-sizing: border-box;
 }
@@ -166,7 +181,7 @@ margin-bottom: 150px;
     margin-top: 0;
 }
 .hero-text h1{
-    font-family: 'Oswald';
+    font-family: 'Rockwell Condensed';
     margin-bottom: 0px;
 }
 .hero-text .button{
