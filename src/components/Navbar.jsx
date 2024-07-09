@@ -6,7 +6,7 @@ import cart from "../assets/Cart vector.svg";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { ShopContext } from '../context/shop-context';
-
+import X from "../assets/X.svg"
 const Navbar = () => {
   const { cartItems } = useContext(ShopContext);
 
@@ -29,7 +29,7 @@ const Navbar = () => {
       <nav className='navbar bg-white'>
         <Link to="/" style={{textDecoration: 'none'}} className='no-underline'> <h2>Kickoff Kits</h2></Link>
         <ul className='sidebar'>
-          <li onClick={hideSideBar}><img src={list} alt="" /></li>
+          <li onClick={hideSideBar} className='d-flex justify-content-around'><h2 className='text-success'>Kickoff Kits</h2> <span className='ps-5'><img src={X} alt="" /></span></li>
           <li className='input-wrapper'>
             <input type="text" placeholder='search for anything' />
             <img src={search} alt="" />
