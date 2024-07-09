@@ -432,13 +432,13 @@ h5{
         align-items: flex-start;
         margin: 0;
         padding: 0;
-        font-size: 16px;
+        /* font-size: 16px; */
     }
     .product-info .product-name{
         font-weight: 400;
         height: 21px;
         width: 100%;
-        font-size: 16px;
+        font-size: 14px;
         text-align: start;
     }
     .product-info .product-category{
@@ -447,6 +447,7 @@ h5{
     .interest-list{
         grid-template-columns: 1fr 1fr;
         gap: 10px;
+        /* padding-right: 2000px; */
     }
     
 }

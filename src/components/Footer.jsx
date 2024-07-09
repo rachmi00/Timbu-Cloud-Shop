@@ -68,7 +68,7 @@ const Footer = () => {
      <p className='pe-1'>Terms of Use</p>
      <p className='pe-1'>Supply Chain</p>
      <p className='pe-1'>Site Map</p>
-     <p className='pe-1'>Cookie Policy and Management</p>
+     <p className='pe-1'>Cookie Policy</p>
     </div>
 
     </footer>

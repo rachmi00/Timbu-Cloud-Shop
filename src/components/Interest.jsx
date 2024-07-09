@@ -30,10 +30,10 @@ const Interest = () => {
               
             </div>
             <div className='product-info'>
-                <p className='product-name'>
+                <p className='product-name '>
                     {product.productName}
                 </p>
-                <p className='product-category pt-2'>
+                <p className='product-category pt-4'>
                     {product.category}
                 </p>
             </div>

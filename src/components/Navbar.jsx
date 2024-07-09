@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import list from '../assets/List.svg';
 import search from "../assets/MagnifyingGlass.svg";
 import user from "../assets/Vector.svg";
-import content from "../assets/Cart Content Indicator.svg";
 import cart from "../assets/Cart vector.svg";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
@@ -35,10 +34,12 @@ const Navbar = () => {
             <input type="text" placeholder='search for anything' />
             <img src={search} alt="" />
           </li>
-          <Link to='/' style={{textDecoration: 'none'}} className='no-underline'> <li className='text-black fw-medium'>Home</li></Link>
-          <li className='text-muted'>help</li>
-          <li className='user text-muted'><span><img src={user} alt="" /></span> Account</li>
-          <Link to="/cart">
+          <Link to='/' style={{textDecoration: 'none'}} className='no-underline' onClick={hideSideBar}> 
+            <li className='text-black fw-medium'>Home</li>
+          </Link>
+          <li className='text-muted' onClick={hideSideBar}>help</li>
+          <li className='user text-muted' onClick={hideSideBar}><span><img src={user} alt="" /></span> Account</li>
+          <Link to="/cart" onClick={hideSideBar}>
             <li className='cart'>
               <span><img src={cart} alt="" /></span>
               Cart

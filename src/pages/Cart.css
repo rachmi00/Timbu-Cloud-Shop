@@ -137,6 +137,7 @@ body{
     .carts{
         width: 360px;
         margin-top: auto;
+        overflow-x: hidden;
     }
     .summary{
         width: 328px;
