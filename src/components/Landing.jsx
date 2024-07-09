@@ -11,7 +11,7 @@ const Landing = () => {
         navigate("/", {state: {scrollToSection: true}});
       }
   return (
-  <div className='hero-container'>
+  <div className='hero-container mt-5 '>
     <div className='hero-image-container'>
       
       <div className="hero1 desktop-image"><img src={pic1} alt="sach pic" className='pic1'/></div>

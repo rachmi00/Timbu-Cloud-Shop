@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Shop from './pages/Shop/Shop'
 import ShopContextProvider from './context/shop-context'
 import Checkout from './pages/Checkout'
+import { PRODUCTS } from './products'
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
     <>
       <ShopContextProvider>
         <Router>
-          <Navbar />
+          <Navbar products={PRODUCTS}/>
           <Routes>
             <Route path='/' element={<Shop />}></Route>
             <Route path='/cart' element={<Cart />}></Route>

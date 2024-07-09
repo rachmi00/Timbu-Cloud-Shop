@@ -26,8 +26,8 @@ const Navbar = () => {
   };
 
   return (
-    <header className='header'>
-      <nav className='navbar'>
+    <header className='header bg-white'>
+      <nav className='navbar bg-white'>
         <Link to="/" style={{textDecoration: 'none'}} className='no-underline'> <h2>Kickoff Kits</h2></Link>
         <ul className='sidebar'>
           <li onClick={hideSideBar}><img src={list} alt="" /></li>

@@ -5,7 +5,7 @@ import "./Cart.css"
 
 const Checkout = () => {
     return (
-        <div>
+        <div className=' checkout'>  
             <div className="container mt-5">
                 <main>
 

@@ -52,23 +52,23 @@ const Footer = () => {
           <li className="list-group-item pt-2">
             <h4 className='text-black'>Follow Us</h4>
             <ul className='d-flex justify-content-between'>
-              <li className="list-group-item"><img src={snapchat} alt="" /></li>
-              <li className="list-group-item"><img src={instagram} alt="" /></li>
-              <li className="list-group-item"><img src={twitter} alt="" /></li>
-              <li className="list-group-item"><img src={facebook} alt="" /></li>
-              <li className="list-group-item"><img src={telegram} alt="" /></li>
+              <li className="list-group-item "><img src={snapchat} alt="" /></li>
+              <li className="list-group-item "><img src={instagram} alt="" /></li>
+              <li className="list-group-item "><img src={twitter} alt="" /></li>
+              <li className="list-group-item "><img src={facebook} alt="" /></li>
+              <li className="list-group-item "><img src={telegram} alt="" /></li>
             </ul>
           </li>
          </ul>
         </div>
       </div>
     <div className='mt-4 d-flex justify-content-between ms-4 me-4'>
-    <p className="mb-1 text-muted ">&copy; 2024 Kickoff Kits. All Rights reserved</p>
-     <p>Privacy Policy</p>
-     <p>Terms of Use</p>
-     <p>Supply Chain</p>
-     <p>Site Map</p>
-     <p>Cookie Policy and Management</p>
+    <p className="pe-1 text-muted ">&copy; 2024 Kickoff Kits. All Rights reserved</p>
+     <p className='pe-1'>Privacy Policy</p>
+     <p className='pe-1'>Terms of Use</p>
+     <p className='pe-1'>Supply Chain</p>
+     <p className='pe-1'>Site Map</p>
+     <p className='pe-1'>Cookie Policy and Management</p>
     </div>
 
     </footer>

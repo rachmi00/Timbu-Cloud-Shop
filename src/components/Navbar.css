@@ -8,9 +8,15 @@ body{
 }
 header{
     margin-top: 0;
- height: 80px;
+ height: 100px;
  padding: 5px 100px;
- margin-bottom: 20px
+ 
+margin-bottom: 100px;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ z-index: 1000;
 }
 .navbar h2{
     font-family: 'Oswald';
@@ -83,7 +89,7 @@ nav ul li input{
 
 @media (max-width: 768px) {
     header{
-        padding: 10px 50px;
+        padding: 10px 90px;
     }
 
     nav{
