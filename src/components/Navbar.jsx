@@ -64,7 +64,7 @@ const Navbar = () => {
               <span className="badge rounded-pill bg-success">{getTotalItems()}</span>
             </li>
           </Link>
-          <li className='menu-button d-flex justify-content-between' onClick={showSideBar}><img src={list} style ={{ width: '14px', height: '14px'}} className='mt-1' alt="" />  <span className="badge rounded-pill bg-success ms-1">{getTotalItems()}</span></li>
+          <li className='menu-button' onClick={showSideBar}><img src={list} alt="" /></li>
         </ul>
       </nav>
      </div>
