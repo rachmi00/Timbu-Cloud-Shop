@@ -3,6 +3,8 @@ import cart from '../../assets/ShoppingCart.png';
 import heart from '../../assets/Heart.png';
 import star from '../../assets/Star.svg';
 import success from '../../assets/CartSuccess.svg';
+import clickedCart from '../../assets/cart.svg';
+import clickedHeart from '../../assets/Like.svg';
 import { ShopContext } from '../../context/shop-context';
 import { NavLink } from 'react-router-dom';
 import './Shopp.css';
@@ -11,13 +13,21 @@ const Product = (props) => {
     const { id, productName, price, productImage, category } = props.data;
     const { addToCart } = useContext(ShopContext);
     const [showModal, setShowModal] = useState(false);
+    const [cartImage, setCartImage] = useState(cart);
+    const [heartImage, setHeartImage] = useState(heart);
 
     const handleAddToCart = () => {
         addToCart(id);
         setShowModal(true);
+        setCartImage(clickedCart);
         setTimeout(() => {
             setShowModal(false);
+            setCartImage(cart); // Revert back to original cart image after the modal hides
         }, 2000); // Hide modal after 2 seconds
+    };
+
+    const handleHeartClick = () => {
+        setHeartImage(clickedHeart);
     };
 
     return (
@@ -30,11 +40,11 @@ const Product = (props) => {
             <div className="product-contain">
                 <img src={productImage} alt="product image" />
                 <div className='buttons'>
-                    <button className='cart-button'>
-                        <img src={heart} alt="like" className='cart-image' />
+                    <button className='cart-button' onClick={handleHeartClick}>
+                        <img src={heartImage} alt="like" className='cart-image' />
                     </button>
                     <button className='heart-button' onClick={handleAddToCart}>
-                        <img src={cart} alt="Shopping Cart" className='cart-image' />
+                        <img src={cartImage} alt="Shopping Cart" className='cart-image' />
                     </button>
                 </div>
             </div>
