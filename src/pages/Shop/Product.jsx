@@ -16,7 +16,7 @@ const Product = (props) => {
                 <img src={productImage} alt="product image" />
                 <div className='buttons'>
                     <button className='cart-button '><img src={heart} alt="like" className='cart-image' /></button>
-                 <NavLink to='/cart'>          <button className='heart-button' onClick={()=>addToCart(id)}><img src={cart} alt="Shopping Cart" className='cart-image' /></button></NavLink>
+                 <NavLink to='/cart'> <button className='heart-button' onClick={()=>addToCart(id)}><img src={cart} alt="Shopping Cart" className='cart-image' /></button></NavLink>
                   
                 </div>
             </div>
@@ -28,7 +28,7 @@ const Product = (props) => {
                 <p className='product-name'>
                     {productName}
                 </p>
-                <p className='product-category'>
+                <p className='product-category pt-2'>
                     {category}
                 </p>
             </div>

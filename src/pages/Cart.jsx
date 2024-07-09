@@ -24,10 +24,10 @@ const Cart = () => {
                   <p className='product-name'>
                     {product.productName}
                   </p>
-                  <p className='product-category'>
+                  <p className='product-category pt-2'>
                     {product.category}
                   </p>
-                  <div className='d-flex justify-content-between'>
+                  <div className='d-flex justify-content-between align-items-center'>
                 <select name="form-select" id="size" className='me-5'>
                   <option value="">Size: M </option>
                   <option value="">Size: S </option>
@@ -44,7 +44,7 @@ const Cart = () => {
                 </div>
                 </div>
                 <div className='price-container'>
-                  <p className='price'>${product.price}</p>
+                  <p className='price'>₦{product.price}</p>
                 </div>
               </div>
           
@@ -54,7 +54,7 @@ const Cart = () => {
         <div className='summary'>
           <p>Order Summary</p>
           <div className="">
-            <ul className=" mb-3 width me-3">
+            <ul className=" mb-3 width pe-5 me-3 ">
               <li className="list-group-item d-flex justify-content-between lh-sm p-2">
                 <div>
                   <h6 className="my-0">Items</h6>
@@ -66,18 +66,18 @@ const Cart = () => {
                   <h6 className="my-0">Delivery</h6>
 
                 </div>
-                <span className="text-muted">$50</span>
+                <span className="text-muted">₦50</span>
               </li>
               <li className="list-group-item d-flex justify-content-between lh-sm p-2">
                 <div>
                   <h6 className="my-0">Services</h6>
                 </div>
-                <span className="text-muted">$230</span>
+                <span className="text-muted">₦230</span>
               </li>
 
               <li className="list-group-item d-flex justify-content-between p-2" >
                 <span>Total</span>
-                <strong>$20</strong>
+                <strong>₦20</strong>
               </li>
               <li className='list-group-item d-flex justify-content-between p-2'>
                 <form className="card p-2">

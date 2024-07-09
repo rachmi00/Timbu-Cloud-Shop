@@ -59,3 +59,55 @@ nav ul li input{
     padding: 10px 14px;
     border-radius: 4px;
 }
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #fff;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.menu-button img{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header{
+        padding: 10px 50px;
+    }
+
+    nav{
+        display: inline-block;
+        justify-content: space-between;
+        width: 328px;
+    }
+    .hide-mobile{
+        display: none;
+    }
+    .menu-button img{
+        display: flex;
+    }
+    .menu-button{
+        background-color: #077929;
+        border-radius: 4px;
+    }
+
+}
+@media (max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+    nav{
+        display: inline-block;
+        justify-content:space-between;
+        width: 328px;
+    }
+  
+}

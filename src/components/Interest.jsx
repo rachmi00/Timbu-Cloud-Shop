@@ -11,7 +11,7 @@ const Interest = () => {
     const interestProducts = PRODUCTS.slice(5,9);
   return (
       
-    <div className='product'>
+    <div className='product ps-5'>
          <h5 >You Might Also like</h5>
          <div className='interest-list'>
            
@@ -33,7 +33,7 @@ const Interest = () => {
                 <p className='product-name'>
                     {product.productName}
                 </p>
-                <p className='product-category'>
+                <p className='product-category pt-2'>
                     {product.category}
                 </p>
             </div>
