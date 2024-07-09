@@ -15,7 +15,7 @@ const Cart = () => {
   };
 
   return (
-    <div className='carts container-fluid mt-5 d-block justify-content-center'>
+    <div className='carts container-fluid  d-block justify-content-center'>
       <div className="cart-container mt-4">
         <div className='items'>
           <p className='des'>Your Items</p>
